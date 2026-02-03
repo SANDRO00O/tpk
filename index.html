@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- =========================================
+         PROFESSIONAL SEO CONFIGURATION
+    ========================================== -->
+    <!-- Replace content below with your actual data -->
+    <title>THE PAPER KINGDOM - My Chemical Romance | Download</title>
+    <meta name="description" content="Download the new album 'THE PAPER KINGDOM' by My Chemical Romance for. High-quality MP3 tracks.">
+    <meta name="keywords" content="My Chemical Romance, THE PAPER KINGDOM, Download Music, MP3, New Album 2026">
+    <meta name="author" content="My Chemical Romance">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://tpk.karrarnazim.space">
+    
+    <!-- Open Graph (Facebook/Instagram/Discord) -->
+    <meta property="og:type" content="music.album">
+    <meta property="og:title" content="THE PAPER KINGDOM - Download">
+    <meta property="og:description" content="Listen and download the new album by My Chemical Romance for.">
+    <meta property="og:image" content="assets/album/cover.jpg"> <!-- Path to your cover image -->
+    <meta property="og:url" content="https://tpk.karrarnazim.space">
+    <meta property="og:site_name" content="My Chemical Romance Official">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="THE PAPER KINGDOM - My Chemical Romance">
+    <meta name="twitter:image" content="assets/album/cover.jpg">
+    
+    <!-- Schema.org Structured Data (Google Rich Snippets) -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "MusicAlbum",
+            "name": "THE PAPER KINGDOM",
+            "byArtist": {
+                "@type": "MusicGroup",
+                "name": "My Chemical Romance"
+            },
+            "image": "https://tpk.karrarnazim.space/assets/album/cover.jpg",
+            "numTracks": "10",
+            "genre": "alternative rock",
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock"
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts (YouTube Music Style) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Icons (FontAwesome) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- =========================================
+         CSS STYLES (Pure Black Theme)
+    ========================================== -->
+    <style>
+        :root {
+            --bg-color: #000000;
+            /* Pure Black */
+            --surface-color: #121212;
+            --hover-color: #1a1a1a;
+            --text-primary: #ffffff;
+            --text-secondary: #aaaaaa;
+            --border-color: rgba(255, 255, 255, 0.1);
+            --font-main: 'Roboto', sans-serif;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: var(--font-main);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        /* Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 24px;
+        }
+        
+        .logo {
+            width: 100%;
+            padding:  10px 20px;
+            margin: 0;
+        }
+        
+        .logo img {
+            width: 80px;
+        }
+        
+        
+        /* === ALBUM HEADER SECTION === */
+        .album-header {
+            display: flex;
+            gap: 48px;
+            align-items: flex-end;
+            margin-bottom: 60px;
+            animation: fadeIn 1s ease-in;
+        }
+        
+        .cover-art-wrapper {
+            width: 300px;
+            height: 300px;
+            flex-shrink: 0;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.9);
+        }
+        
+        .cover-art-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+        
+        .album-details {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        
+        .album-type {
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+        
+        .album-title {
+            font-size: 56px;
+            font-weight: 900;
+            line-height: 1;
+            margin-bottom: 16px;
+        }
+        
+        .meta-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 24px;
+        }
+        
+        .artist-avatar {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+        }
+        
+        .artist-name {
+            color: var(--text-primary);
+            font-weight: 700;
+        }
+        
+        .album-desc {
+            font-size: 14px;
+            color: var(--text-secondary);
+            max-width: 600px;
+            line-height: 1.6;
+            margin-bottom: 32px;
+            position: relative;
+            transition: max-height 0.4s ease;
+        }
+        
+        .album-desc a {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        
+        .album-desc.collapsed {
+            max-height: 120px;
+            overflow: hidden;
+        }
+        
+        /* fade out */
+        .album-desc.collapsed::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 50px;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #000000);
+        }
+        
+        
+        .toggle-more.open span {
+            transform: rotate(180deg);
+        }
+        
+        .actions-bar {
+            display: flex;
+            gap: 16px;
+        }
+        
+        .btn-primary {
+            background-color: #ffffff;
+            color: #000000;
+            padding: 12px 32px;
+            border-radius: 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+        
+        .btn-primary:hover {
+            transform: scale(1.02);
+            background-color: #f0f0f0;
+        }
+        
+        /* === TRACKLIST SECTION === */
+        .tracklist-container {
+            width: 100%;
+        }
+        
+        .table-header {
+            display: grid;
+            grid-template-columns: 40px 1fr 100px;
+            /* # | Title | Download */
+            padding: 0 16px 12px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+        
+        .track-row {
+            display: grid;
+            grid-template-columns: 40px 1fr 100px;
+            align-items: center;
+            padding: 10px 16px;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+        }
+        
+        .track-row:hover {
+            background-color: var(--hover-color);
+        }
+        
+        .track-num {
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+        
+        .track-info-group {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        
+        .track-thumb {
+            width: 48px;
+            height: 48px;
+            border-radius: 4px;
+            object-fit: cover;
+        }
+        
+        .track-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .track-title {
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+        
+        .track-artist {
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+        
+        .track-actions {
+            justify-self: end;
+        }
+        
+        .dl-icon-btn {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-secondary);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.2s;
+        }
+        
+        .dl-icon-btn:hover {
+            color: var(--text-primary);
+            border-color: var(--text-primary);
+            background: rgba(255, 255, 255, 0.05);
+        }
+        
+        footer {
+            margin-top: 80px;
+            text-align: center;
+            padding: 40px;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            font-size: 12px;
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .album-header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 24px;
+            }
+            
+            .cover-art-wrapper {
+                width: 220px;
+                height: 220px;
+            }
+            
+            .album-title {
+                font-size: 32px;
+            }
+            
+            .meta-info {
+                justify-content: center;
+            }
+            
+            .album-desc {
+                margin: 0 auto 30px;
+            }
+            
+            .actions-bar {
+                justify-content: center;
+            }
+            
+            .table-header {
+                display: none;
+            }
+            
+            /* Hide header on mobile */
+            
+            .track-row {
+                grid-template-columns: 30px 1fr 50px;
+                padding: 12px 8px;
+            }
+            
+            .track-thumb {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo">
+        <img src="assets/logo/mcr5.jpg" alt="mcr5 logo">
+    </div>
+    <main class="container">
+        <!-- HEADER -->
+        <header class="album-header">
+            <div class="cover-art-wrapper">
+                <img src="assets/album/cover.jpg" alt="Album Cover" id="mainCover">
+            </div>
+            
+            <div class="album-details">
+                <span class="album-type">Album</span>
+                <h1 class="album-title">THE PAPER KINGDOM</h1>
+                
+                <div class="meta-info">
+                    <!-- Replace artist.jpg with artist image -->
+                    <img src="artist.jpg" alt="Artist" class="artist-avatar" onerror="this.style.display='none'">
+                    <span class="artist-name">My Chemical Romance</span>
+                    <span>•</span>
+                    <span>2026</span>
+                    <span>•</span>
+                    <span id="track-count-display">10 Songs</span>
+                </div>
+                
+                <p class="album-desc collapsed toggle-more" id="albumDesc" onclick="toggleDesc()">
+                    The Paper Kingdom (also referred to as MCR5) is an unreleased studio album by the American rock band My Chemical Romance. It would have been the band's fifth studio album. Work on it began in early 2012, set to be a concept album with a story about a support group of parents whose children had died.
+                    More details at <a href="https://en.wikipedia.org/wiki/The_Paper_Kingdom">THE PAPER KINGDOM</a>
+                </p>
+                
+                
+                <div class="actions-bar">
+                    <!-- Link to download the full .zip file -->
+                    <a href="files/full-album.zip" class="btn-primary" download>
+                        <i class="fa-solid fa-download"></i> Download Album
+                    </a>
+                </div>
+            </div>
+        </header>
+        
+        <!-- TRACKLIST -->
+        <section class="tracklist-container">
+            <div class="table-header">
+                <span>#</span>
+                <span>Title</span>
+                <span style="text-align: right;">Save</span>
+            </div>
+            
+            <div id="track-list-wrapper">
+
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>
+            Content found publicly on the internet. No ownership claimed. All rights belong to their respective owners.
+        </p>
+    </footer>
+    
+    <script>
+        const albumData = {
+            artist: "My Chemical Romance",
+            coverImage: "assets/album/cover.jpg", // The image used for every track
+            tracks: [
+                {
+                    title: "THE FULL ALBUM",
+                    file: "/album/tpk.mp3"
+                }
+                
+            ]
+        };
+        
+        // RENDER LOGIC
+        // ==========================================
+        document.addEventListener('DOMContentLoaded', () => {
+            const trackContainer = document.getElementById('track-list-wrapper');
+            const trackCountDisplay = document.getElementById('track-count-display');
+            
+            // Update Track Count in Header
+            trackCountDisplay.innerText = `${albumData.tracks.length} Songs`;
+            
+            // Generate Track HTML
+            let htmlContent = '';
+            
+            albumData.tracks.forEach((track, index) => {
+                const trackNum = index + 1;
+                
+                htmlContent += `
+                    <div class="track-row">
+                        <div class="track-num">${trackNum}</div>
+                        
+                        <div class="track-info-group">
+                            <img src="${albumData.coverImage}" alt="${track.title}" class="track-thumb">
+                            <div class="track-text">
+                                <span class="track-title">${track.title}</span>
+                                <span class="track-artist">${albumData.artist}</span>
+                            </div>
+                        </div>
+                        
+                        <div class="track-actions">
+                            <a href="${track.file}" class="dl-icon-btn" download title="Download ${track.title}">
+                                <i class="fa-solid fa-download"></i>
+                            </a>
+                        </div>
+                    </div>
+                `;
+            });
+            
+            trackContainer.innerHTML = htmlContent;
+        });
+        
+        function toggleDesc() {
+            const desc = document.getElementById("albumDesc");
+            const toggle = document.querySelector(".toggle-more");
+            
+            desc.classList.toggle("collapsed");
+            toggle.classList.toggle("open");
+        }
+    </script>
+</body>
+
+</html>
