@@ -5,10 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- =========================================
-         PROFESSIONAL SEO CONFIGURATION
-    ========================================== -->
-    <!-- Replace content below with your actual data -->
     <title>THE PAPER KINGDOM - My Chemical Romance | Download</title>
     <meta name="description" content="Download the new album 'THE PAPER KINGDOM' by My Chemical Romance. High-quality MP3 tracks.">
     <meta name="keywords" content="My Chemical Romance, THE PAPER KINGDOM, Download Music, MP3, New Album 2026">
@@ -29,7 +25,6 @@
     <meta name="twitter:title" content="THE PAPER KINGDOM - My Chemical Romance">
     <meta name="twitter:image" content="assets/album/cover.jpg">
     
-    <!-- Schema.org Structured Data (Google Rich Snippets) -->
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -51,17 +46,9 @@
         }
     </script>
     
-    <!-- Google Fonts (YouTube Music Style) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    
     <!-- Icons (FontAwesome) -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     
-    <!-- =========================================
-         CSS STYLES (Pure Black Theme)
-    ========================================== -->
     <style>
         @font-face {
             font-family: 'mainfont';
@@ -148,7 +135,6 @@
         }
         
         
-        /* === ALBUM HEADER SECTION === */
         .album-header {
             display: flex;
             gap: 48px;
@@ -233,7 +219,6 @@
             overflow: hidden;
         }
         
-        /* fade out */
         .album-desc.collapsed::after {
             content: "";
             position: absolute;
@@ -273,7 +258,6 @@
             background-color: #f0f0f0;
         }
         
-        /* === TRACKLIST SECTION === */
         .tracklist-container {
             width: 100%;
         }
@@ -385,7 +369,6 @@
             }
         }
         
-        /* Responsive Design */
         @media (max-width: 768px) {
             .album-header {
                 flex-direction: column;
@@ -484,7 +467,6 @@
             </div>
         </header>
         
-        <!-- TRACKLIST -->
         <section class="tracklist-container">
             <div class="table-header">
                 <span>#</span>
@@ -508,7 +490,7 @@
     <script>
         const albumData = {
             artist: "My Chemical Romance",
-            coverImage: "assets/album/cover.jpg", // The image used for every track
+            coverImage: "assets/album/cover.jpg",
             tracks: [
             {
                 title: "Fake Your Death (Demo)",
@@ -576,16 +558,12 @@
             }]
         };
         
-        // RENDER LOGIC
-        // ==========================================
         document.addEventListener('DOMContentLoaded', () => {
             const trackContainer = document.getElementById('track-list-wrapper');
             const trackCountDisplay = document.getElementById('track-count-display');
             
-            // Update Track Count in Header
             trackCountDisplay.innerText = `${albumData.tracks.length} Songs`;
             
-            // Generate Track HTML
             let htmlContent = '';
             
             albumData.tracks.forEach((track, index) => {
