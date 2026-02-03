@@ -63,6 +63,29 @@
          CSS STYLES (Pure Black Theme)
     ========================================== -->
     <style>
+@font-face {
+    font-family: 'mainfont';
+    src: url('/assets/fonts/Tox-Typewriter.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+@font-face {
+    font-family: 'mcrfont';
+    src: url('/assets/fonts/my_chemical_romance.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'albumtitle';
+    src: url('/assets/fonts/RomanticChemicals-vmnzE.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+        
         :root {
             --bg-color: #000000;
             /* Pure Black */
@@ -71,7 +94,7 @@
             --text-primary: #ffffff;
             --text-secondary: #aaaaaa;
             --border-color: rgba(255, 255, 255, 0.1);
-            --font-main: 'Roboto', sans-serif;
+            --font-main: 'mainfont';
         }
         
         * {
@@ -425,12 +448,12 @@
             
             <div class="album-details">
                 <span class="album-type">Album</span>
-                <h1 class="album-title">THE PAPER KINGDOM</h1>
+                <h1 style="font-family: 'albumtitle';" class="album-title">THE PAPER KINGDOM</h1>
                 
                 <div class="meta-info">
                     <!-- Replace artist.jpg with artist image -->
                     <img src="artist.jpg" alt="Artist" class="artist-avatar" onerror="this.style.display='none'">
-                    <span class="artist-name">My Chemical Romance</span>
+                    <span style="font-family: 'mcrfont';" class="artist-name">My Chemical Romance</span>
                     <span>•</span>
                     <span>2026</span>
                     <span>•</span>
