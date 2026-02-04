@@ -80,6 +80,7 @@
             --text-secondary: #aaaaaa;
             --border-color: rgba(255, 255, 255, 0.1);
             --font-main: 'mainfont';
+            --dark-red: #7A0000;
         }
         
         * {
@@ -101,6 +102,10 @@
         a {
             text-decoration: none;
             color: inherit;
+        }
+        
+        a:hover {
+            color: var(--dark-red);
         }
         
         ul {
@@ -130,7 +135,7 @@
         }
         
         .logo a:hover {
-            color: #7A0000;
+            color: var(--dark-red);
         }
         
         .logo h1 {
@@ -202,6 +207,7 @@
         .artist-name {
             color: var(--text-primary);
             font-weight: 700;
+            text-align: center;
         }
         
         .album-desc {
@@ -261,7 +267,7 @@
         
         .btn-primary:hover {
             transform: scale(1.02);
-            background-color: #7A0000;
+            background-color: var(--dark-red);
             color: #FFFFFF;
         }
         
@@ -370,6 +376,7 @@
             font-weight: bold;
             margin: 3px;
         }
+        
         
         footer .contact {
             margin-bottom: 8px;
@@ -485,7 +492,7 @@
     
     <footer>
         <p class="contact"><a href="https://karrarnazim.space">Contact</a> | <a href="https://github.com/SANDRO00O">Github</a></p>
-        <p>
+        <p style="font-family: serif;">
             This website is an unofficial fan-made project and is not authorized, endorsed, sponsored, or approved by My Chemical Romance, Warner Records, or any associated entities.
             All trademarks, recordings, compositions, names, images, and other intellectual property remain the exclusive property of their respective rights holders.
             This website makes no claim of ownership over any copyrighted material and is intended solely for informational and educational purposes.
