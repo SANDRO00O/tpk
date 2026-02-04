@@ -15,7 +15,7 @@
     <!-- Open Graph (Facebook/Instagram/Discord) -->
     <meta property="og:type" content="music.album">
     <meta property="og:title" content="THE PAPER KINGDOM - Download">
-    <meta property="og:description" content="Listen and download the new album by My Chemical Romance for.">
+    <meta property="og:description" content="Listen and download the new album by My Chemical Romance.">
     <meta property="og:image" content="assets/album/cover.jpg"> <!-- Path to your cover image -->
     <meta property="og:url" content="https://tpk.karrarnazim.space">
     <meta property="og:site_name" content="My Chemical Romance Official">
@@ -46,7 +46,6 @@
         }
     </script>
     
-    <!-- Icons (FontAwesome) -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     
     <style>
@@ -75,7 +74,6 @@
         
         :root {
             --bg-color: #000000;
-            /* Pure Black */
             --surface-color: #121212;
             --hover-color: #1a1a1a;
             --text-primary: #ffffff;
@@ -109,7 +107,6 @@
             list-style: none;
         }
         
-        /* Layout */
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -126,7 +123,6 @@
             padding: 10px 20px;
             margin: 0;
             font-size: 0.4rem;
-            line-height: 12px;
         }
         
         .logo img {
@@ -138,7 +134,7 @@
         }
         
         .logo h1 {
-            margin-top: 7px;
+            margin-top: 11px;
         }
         
         
@@ -161,9 +157,7 @@
             object-fit: cover;
             border-radius: 4px;
             animation: fadeIn 0.7s ease-in-out;
-                        box-shadow: 0 0 50px rgba(0, 0, 0, 0.9);
-
-            
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.9);
         }
         
         .album-details {
@@ -280,7 +274,6 @@
         .table-header {
             display: grid;
             grid-template-columns: 40px 1fr 100px;
-            /* # | Title | Download */
             padding: 0 16px 12px;
             border-bottom: 1px solid var(--border-color);
             color: var(--text-secondary);
@@ -364,7 +357,6 @@
         
         footer {
             animation: fadeIn 1.5s ease-in-out;
-            
             margin-top: 80px;
             text-align: center;
             padding: 40px;
@@ -373,7 +365,16 @@
             font-size: 12px;
         }
         
-        /* Animations */
+        footer a {
+            text-decoration: underline;
+            font-weight: bold;
+            margin: 3px;
+        }
+        
+        footer .contact {
+            margin-bottom: 8px;
+        }
+        
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -417,7 +418,6 @@
                 display: none;
             }
             
-            /* Hide header on mobile */
             
             .track-row {
                 grid-template-columns: 30px 1fr 50px;
@@ -428,16 +428,6 @@
                 width: 40px;
                 height: 40px;
             }
-        }
-        
-        footer a {
-            text-decoration: underline;
-            font-weight: bold;
-            margin: 3px;
-        }
-        
-        footer .contact {
-            margin-bottom: 8px;
         }
     </style>
 </head>
@@ -459,13 +449,11 @@
                 <h1 style="font-family: 'albumtitle';" class="album-title">THE PAPER KINGDOM</h1>
                 
                 <div class="meta-info">
-                    <!-- Replace artist.jpg with artist image -->
-                    <img src="artist.jpg" alt="Artist" class="artist-avatar" onerror="this.style.display='none'">
                     <span style="font-family: 'mcrfont';" class="artist-name">My Chemical <br> Romance</span>
                     <span>•</span>
                     <span>2026</span>
                     <span>•</span>
-                    <span id="track-count-display">10 Songs</span>
+                    <span id="track-count-display">16 Songs</span>
                 </div>
                 
                 <p class="album-desc collapsed toggle-more" id="albumDesc" onclick="toggleDesc()">
@@ -510,39 +498,39 @@
             coverImage: "assets/album/cover.jpg",
             tracks: [
             {
-                title: "Fake Your Death (Demo)",
+                title: "Fake Your Death",
                 file: "https://github.com/SANDRO00O/tpk/releases/download/media/1-01.Fake.Your.Death.Demo.mp3"
             },
             {
-                title: "Witch (Demo)",
+                title: "Witch",
                 file: "https://github.com/SANDRO00O/tpk/releases/download/media/1-02.Witch.Demo.mp3"
             },
             {
-                title: "Bike Thief (Demo)",
+                title: "Bike Thief",
                 file: "https://github.com/SANDRO00O/tpk/releases/download/media/1-03.Bike.Thief.Demo.mp3"
             },
             {
-                title: "Operation Day (Demo)",
+                title: "Operation Day",
                 file: "https://github.com/SANDRO00O/tpk/releases/download/media/1-04.Operation.Day.Demo.mp3"
             },
             {
-                title: "Falling Down (Demo)",
+                title: "Falling Down",
                 file: "https://github.com/SANDRO00O/tpk/releases/download/media/1-05.Falling.Down.Demo.mp3"
             },
             {
-                title: "Birthday Girl (Demo)",
+                title: "Birthday Girl",
                 file: "https://github.com/SANDRO00O/tpk/releases/download/media/1-06.Birthday.Girl.Demo.mp3"
             },
             {
-                title: "Dark Cloud (Demo)",
+                title: "Dark Cloud",
                 file: "https://github.com/SANDRO00O/tpk/releases/download/media/1-07.Dark.Cloud.Demo.mp3"
             },
             {
-                title: "Wake Up! (Demo)",
+                title: "Wake Up!",
                 file: "https://github.com/SANDRO00O/tpk/releases/download/media/1-08.Wake.Up.Demo.mp3"
             },
             {
-                title: "Louder (Demo)",
+                title: "Louder",
                 file: "https://github.com/SANDRO00O/tpk/releases/download/media/1-09.Louder.Demo.mp3"
             },
             {
@@ -550,27 +538,27 @@
                 file: "https://github.com/SANDRO00O/tpk/releases/download/media/1-10.Narita.Airport.Interlude.Dem.mp3"
             },
             {
-                title: "War Beneath the Rain (Demo)",
+                title: "War Beneath the Rain",
                 file: "https://github.com/SANDRO00O/tpk/releases/download/media/1-11.War.Beneath.the.Rain.Demo.mp3"
             },
             {
-                title: "Paper Swords (Demo)",
+                title: "Paper Swords",
                 file: "https://github.com/SANDRO00O/tpk/releases/download/media/1-12.Paper.Swords.Demo.mp3"
             },
             {
-                title: "Dive (Demo)",
+                title: "Dive",
                 file: "https://github.com/SANDRO00O/tpk/releases/download/media/1-13.Dive.Demo.mp3"
             },
             {
-                title: "High Hopes (Demo)",
+                title: "High Hopes",
                 file: "https://github.com/SANDRO00O/tpk/releases/download/media/1-14.High.Hopes.Demo.mp3"
             },
             {
-                title: "Dogs (Demo)",
+                title: "Dogs",
                 file: "https://github.com/SANDRO00O/tpk/releases/download/media/Dogs.Demo.mp3"
             },
             {
-                title: "Perfectly Well (Demo)",
+                title: "Perfectly Well",
                 file: "https://github.com/SANDRO00O/tpk/releases/download/media/Perfectly.Well.Demo.mp3"
             }]
         };
