@@ -16,7 +16,7 @@
     <meta property="og:type" content="music.album">
     <meta property="og:title" content="THE PAPER KINGDOM - Download">
     <meta property="og:description" content="Listen and download the new album by My Chemical Romance.">
-    <meta property="og:image" content="assets/album/cover.jpg"> <!-- Path to your cover image -->
+    <meta property="og:image" content="assets/album/cover.jpg">
     <meta property="og:url" content="https://tpk.karrarnazim.space">
     <meta property="og:site_name" content="My Chemical Romance Official">
     
@@ -48,410 +48,40 @@
     
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     
-    <!-- Clarity tracking code for https://tpk.karrarnazim.space/ -->
-<script>
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "vc9h1u6685");
-</script>
+    <!-- Clarity tracking code -->
+    <script>
+        (function(c, l, a, r, i, t, y) {
+            c[a] = c[a] || function() {
+                (c[a].q = c[a].q || []).push(arguments)
+            };
+            t = l.createElement(r);
+            t.async = 1;
+            t.src = "https://www.clarity.ms/tag/" + i + "?ref=bwt";
+            y = l.getElementsByTagName(r)[0];
+            y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "vc9h1u6685");
+    </script>
     
-    <style>
-        @font-face {
-            font-family: 'mainfont';
-            src: url('/assets/fonts/Tox-Typewriter.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-            
-        }
-        
-        @font-face {
-            font-family: 'mcrfont';
-            src: url('/assets/fonts/my_chemical_romance.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-        }
-        
-        @font-face {
-            font-family: 'albumtitle';
-            src: url('/assets/fonts/RomanticChemicals-vmnzE.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-            
-        }
-        
-        :root {
-            --bg-color: #000000;
-            --surface-color: #121212;
-            --hover-color: #1a1a1a;
-            --text-primary: #ffffff;
-            --text-secondary: #aaaaaa;
-            --border-color: rgba(255, 255, 255, 0.1);
-            --font-main: 'mainfont';
-            --dark-red: #7A0000;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            -webkit-tap-highlight-color: transparent;
-            user-select: none;
-        }
-        
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-primary);
-            font-family: var(--font-main);
-            overflow-x: hidden;
-            -webkit-font-smoothing: antialiased;
-        }
-        
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-        
-        a:hover {
-            color: var(--dark-red);
-        }
-        
-        ul {
-            list-style: none;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px 24px;
-        }
-        
-        .logo {
-            animation: fadeIn 0.5s ease-in-out;
-            justify-content: space-between;
-            align-items: center;
-            display: flex;
-            vertical-align: middle;
-            width: 100%;
-            padding: 10px 20px;
-            margin: 0;
-            font-size: 0.4rem;
-        }
-        
-        .logo img {
-            width: 80px;
-        }
-        
-        .logo a:hover {
-            color: var(--dark-red);
-        }
-        
-        .logo h1 {
-            margin-top: 11px;
-        }
-        
-        
-        .album-header {
-            display: flex;
-            gap: 48px;
-            align-items: flex-end;
-            margin-bottom: 60px;
-        }
-        
-        .cover-art-wrapper {
-            width: 300px;
-            height: 300px;
-            flex-shrink: 0;
-        }
-        
-        .cover-art-wrapper img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 4px;
-            animation: fadeIn 0.7s ease-in-out;
-            box-shadow: 0 0 50px rgba(0, 0, 0, 0.9);
-        }
-        
-        .album-details {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            animation: fadeIn 0.9s ease-in-out;
-            
-        }
-        
-        .album-type {
-            font-size: 14px;
-            font-weight: 500;
-            text-transform: uppercase;
-            color: var(--text-secondary);
-            margin-bottom: 8px;
-            letter-spacing: 1px;
-        }
-        
-        .album-title {
-            font-size: 56px;
-            font-weight: 900;
-            line-height: 1;
-            margin-bottom: 16px;
-        }
-        
-        .meta-info {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-            margin-bottom: 24px;
-        }
-        
-        .artist-avatar {
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
-        }
-        
-        .artist-name {
-            color: var(--text-primary);
-            font-weight: 700;
-            text-align: center;
-        }
-        
-        .album-desc {
-            font-size: 14px;
-            color: var(--text-secondary);
-            max-width: 600px;
-            line-height: 1.6;
-            margin-bottom: 32px;
-            position: relative;
-            transition: max-height 0.4s ease;
-        }
-        
-        .album-desc a {
-            text-decoration: underline;
-            font-weight: bold;
-        }
-        
-        .album-desc.collapsed {
-            max-height: 120px;
-            overflow: hidden;
-        }
-        
-        .album-desc.collapsed::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 50px;
-            background: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--bg-color));
-        }
-        
-        
-        .toggle-more.open span {
-            transform: rotate(180deg);
-        }
-        
-        .actions-bar {
-            display: flex;
-            gap: 16px;
-        }
-        
-        .btn-primary {
-            animation: fadeIn 1.1s ease-in-out;
-            background-color: #ffffff;
-            color: #000000;
-            padding: 12px 32px;
-            border-radius: 30px;
-            font-weight: 700;
-            text-transform: uppercase;
-            font-size: 14px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            transition: transform 0.2s, background-color 0.2s;
-        }
-        
-        .btn-primary:hover {
-            transform: scale(1.02);
-            background-color: var(--dark-red);
-            color: #FFFFFF;
-        }
-        
-        .tracklist-container {
-            width: 100%;
-            animation: fadeIn 1.3s ease-in-out;
-            
-        }
-        
-        .table-header {
-            display: grid;
-            grid-template-columns: 40px 1fr 100px;
-            padding: 0 16px 12px;
-            border-bottom: 1px solid var(--border-color);
-            color: var(--text-secondary);
-            font-size: 13px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 10px;
-        }
-        
-        .track-row {
-            display: grid;
-            grid-template-columns: 40px 1fr 100px;
-            align-items: center;
-            padding: 10px 16px;
-            border-radius: 4px;
-            transition: background-color 0.2s;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.02);
-        }
-        
-        .track-row:hover {
-            background-color: var(--hover-color);
-        }
-        
-        .track-num {
-            color: var(--text-secondary);
-            font-size: 14px;
-        }
-        
-        .track-info-group {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-        }
-        
-        .track-thumb {
-            width: 48px;
-            height: 48px;
-            border-radius: 4px;
-            object-fit: cover;
-        }
-        
-        .track-text {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        
-        .track-title {
-            font-size: 16px;
-            font-weight: 500;
-            color: var(--text-primary);
-            margin-bottom: 4px;
-        }
-        
-        .track-artist {
-            font-size: 14px;
-            color: var(--text-secondary);
-        }
-        
-        .track-actions {
-            justify-self: end;
-        }
-        
-        .dl-icon-btn {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--text-secondary);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: all 0.2s;
-        }
-        
-        .dl-icon-btn:hover {
-            color: var(--text-primary);
-            border-color: var(--text-primary);
-            background: rgba(255, 255, 255, 0.05);
-        }
-        
-        footer {
-            animation: fadeIn 1.5s ease-in-out;
-            margin-top: 80px;
-            text-align: center;
-            padding: 40px;
-            border-top: 1px solid var(--border-color);
-            color: var(--text-secondary);
-            font-size: 12px;
-        }
-        
-        footer a {
-            text-decoration: underline;
-            font-weight: bold;
-            margin: 3px;
-        }
-        
-        
-        footer .contact {
-            margin-bottom: 8px;
-        }
-        
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            
-            to {
-                opacity: 1;
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .album-header {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-                gap: 24px;
-            }
-            
-            .cover-art-wrapper {
-                width: 220px;
-                height: 220px;
-            }
-            
-            .album-title {
-                font-size: 32px;
-            }
-            
-            .meta-info {
-                justify-content: center;
-            }
-            
-            .album-desc {
-                margin: 0 auto 30px;
-            }
-            
-            .actions-bar {
-                justify-content: center;
-            }
-            
-            .table-header {
-                display: none;
-            }
-            
-            
-            .track-row {
-                grid-template-columns: 30px 1fr 50px;
-                padding: 12px 8px;
-            }
-            
-            .track-thumb {
-                width: 40px;
-                height: 40px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/style.css">
+    
 </head>
 
 <body>
-    <div class="logo">
-        <img src="assets/logo/mcr5.jpg" alt="mcr5 logo">
-        <h1 style="font-family: 'mcrfont'; text-align:center;">by <a href="https://karrarnazim.space">KARRAR <br>NAZIM</a></h1>
+    
+    <div id="fullMenu" class="full-screen-menu">
+        <img class="face" src="assets/images/face.png" alt="">
+        <a href="https://karrarnazim.space" class="portfolio-btn">PORTFOLIO</a>
+    </div>
+    
+    <div class="header">
+        <img class="header-line" src="assets/images/header-line.jpg" alt="header line">
+        <div class="logo">
+            <img src="assets/logo/mcr5.jpg" alt="mcr5 logo">
+            
+            <img src="/assets/images/menu.png" alt="menu" id="menu-btn" onclick="toggleMenu()">
+            
+            <h1 style="font-family: 'mcrfont'; text-align:center;">by <a href="https://karrarnazim.space">KARRAR <br>NAZIM</a></h1>
+        </div>
     </div>
     <main class="container">
         <!-- HEADER -->
@@ -480,7 +110,7 @@
                 
                 <div class="actions-bar">
                     <a href="https://github.com/SANDRO00O/tpk/releases/download/media/TPK-20260203T023213Z-3-001.zip" class="btn-primary" download>
-                        <i class="fa-solid fa-download"></i> Download Album
+                        Download Album
                     </a>
                 </div>
             </div>
@@ -498,7 +128,7 @@
             </div>
         </section>
     </main>
-    
+    <img class="mcr" src="/assets/images/church.png" alt="mcr">
     <footer>
         <p class="contact"><a href="https://karrarnazim.space">Contact</a> | <a href="https://github.com/SANDRO00O">Github</a></p>
         <p style="font-family: serif;">
@@ -506,14 +136,15 @@
             All trademarks, recordings, compositions, names, images, and other intellectual property remain the exclusive property of their respective rights holders.
             This website makes no claim of ownership over any copyrighted material and is intended solely for informational and educational purposes.
         </p>
+        
     </footer>
+    <img class="footer-line" src="/assets/images/footer-line.png" alt="footer line">
     
     <script>
         const albumData = {
             artist: "My Chemical Romance",
             coverImage: "assets/album/cover.jpg",
-            tracks: [
-            {
+            tracks: [{
                 title: "Fake Your Death",
                 file: "https://github.com/SANDRO00O/tpk/releases/download/media/1-01.Fake.Your.Death.Demo.mp3"
             },
@@ -590,24 +221,24 @@
             albumData.tracks.forEach((track, index) => {
                 const trackNum = index + 1;
                 
-                htmlContent += `
-                    <div class="track-row">
-                        <div class="track-num">${trackNum}</div>
-                        
-                        <div class="track-info-group">
-                            <img src="${albumData.coverImage}" alt="${track.title}" class="track-thumb">
-                            <div class="track-text">
-                                <span class="track-title">${track.title}</span>
-                                <span class="track-artist">${albumData.artist}</span>
-                            </div>
-                        </div>
-                        
-                        <div class="track-actions">
-                            <a href="${track.file}" class="dl-icon-btn" download title="Download ${track.title}">
-                                <i class="fa-solid fa-download"></i>
-                            </a>
-                        </div>
-                    </div>
+                htmlContent += `  
+                    <div class="track-row">  
+                        <div class="track-num">${trackNum}</div>  
+                          
+                        <div class="track-info-group">  
+                            <img src="${albumData.coverImage}" alt="${track.title}" class="track-thumb">  
+                            <div class="track-text">  
+                                <span class="track-title">${track.title}</span>  
+                                <span class="track-artist">${albumData.artist}</span>  
+                            </div>  
+                        </div>  
+                          
+                        <div class="track-actions">  
+                            <a href="${track.file}" class="dl-icon-btn" download title="Download ${track.title}">  
+                                <i class="fa-solid fa-download"></i>  
+                            </a>  
+                        </div>  
+                    </div>  
                 `;
             });
             
@@ -620,6 +251,21 @@
             
             desc.classList.toggle("collapsed");
             toggle.classList.toggle("open");
+        }
+        
+        function toggleMenu() {
+            const menu = document.getElementById("fullMenu");
+            const body = document.body;
+            
+            const isOpen = menu.classList.toggle("open");
+            body.classList.toggle("menu-active");
+            
+            // ضبط overflow بناءً على حالة المنيو
+            if (isOpen) {
+                body.style.overflow = "hidden";
+            } else {
+                body.style.overflow = ""; // يرجع للقيمة الافتراضية
+            }
         }
     </script>
 </body>
